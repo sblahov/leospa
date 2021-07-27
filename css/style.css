@@ -19,3 +19,49 @@ body {
   font-family: "Rufina", serif;
   font-weight: 700;
   font-size: 6rem; }
+
+.nav {
+  width: 49%;
+  margin-left: 14rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  z-index: 100;
+  position: relative; }
+  .nav__logo img {
+    max-width: 80%; }
+  .nav__navigation {
+    width: 60%;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-between; }
+  .nav__item {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+    color: #000;
+    font-weight: 500; }
+  .nav__link {
+    text-decoration: none;
+    color: #263a41; }
+
+.header {
+  height: 70vh;
+  position: relative; }
+  .header__img {
+    z-index: 1; }
+    .header__img--left {
+      position: absolute;
+      top: 12rem;
+      width: 18%; }
+      .header__img--left img {
+        max-width: 100%; }
+    .header__img--right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%; }
+      .header__img--right img {
+        max-width: 100%; }
