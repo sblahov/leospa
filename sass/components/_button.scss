@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 1.5rem 3.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  &__pink {
+    background-color: $color-pink-primary;
+    transition: all 0.2s;
+    color: #fff;
+
+    &:focus,
+    &:hover {
+      background-color: $color-pink-dark;
+      transform: translateY(-3px);
+      box-shadow: 0 1.1rem 1.1rem rgba(0, 0, 0, 0.11);
+    }
+
+    &:active {
+      transform: translateY(-2px);
+    }
+  }
+}

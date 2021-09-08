@@ -6,8 +6,23 @@ body {
   color: $color-gray-dark;
 }
 
-.header-1 {
+.heading--1 {
   font-family: "Rufina", serif;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 4.5rem;
+  line-height: 1.3;
+}
+
+.header--span {
+  color: $color-pink-primary;
+  text-transform: uppercase;
+  font-family: "Rufina", serif;
+  letter-spacing: 1.5;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.paragraph__text {
+  font-size: 1.4rem;
+  color: $color-gray-light;
 }
