@@ -55,14 +55,35 @@
 
     <div class="header__content">
       <span class="header--span">Spa &amp; Beauty Center</span>
-      <h1 class="header__heading heading--1">Beauty and success start here.</h1>
+      <h1 class="header__heading heading__1">Beauty and success start here.</h1>
       <p class="header__description paragraph__text">
         Leospa's mission is to rejuvenate and relax you so that you can live
         your best life.
       </p>
-      <button class="button button__pink">Reserve Now</button>
+      <div class="header__buttons">
+        <button class="button button__pink">Reserve Now</button>
+        <button class="button__video">
+          <svg class="button__video--icon">
+            <use xlink:href="img/symbol-defs.svg#icon-triangle-right"></use>
+          </svg>
+        </button>
+        <label class="header__video-label" for="button__video"
+          >Watch our story</label
+        >
+      </div>
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <section class="about">
+      <h2 class="heading__2">About Our Spa Center</h2>
+      <p class="section__description paragraph__text">
+        We are a team of passionate wellness professionals who provide services
+        to relax and restore you. Each of our clients receives a custom spa
+        experience tailored to address each of their specific physical and
+        mental needs.
+      </p>
+      <button class="button button__pink button__pink--round">Read More</button>
+    </section>
+  </main>
 </html>

@@ -15,11 +15,17 @@ body {
   line-height: 1.5;
   color: #263a41; }
 
-.heading--1 {
+.heading__1 {
   font-family: "Rufina", serif;
   font-weight: 700;
   font-size: 4.5rem;
   line-height: 1.3; }
+
+.heading__2 {
+  font-family: "Rufina", serif;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: #263a41; }
 
 .header--span {
   color: #f1817e;
@@ -33,12 +39,17 @@ body {
   font-size: 1.4rem;
   color: #888888; }
 
+.section__description {
+  width: 70%;
+  margin-bottom: 3rem; }
+
 .button {
   border: none;
   text-transform: uppercase;
   padding: 1.5rem 3.5rem;
   font-weight: 600;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  border-radius: 2px; }
   .button__pink {
     background-color: #f1817e;
     transition: all 0.2s;
@@ -49,6 +60,27 @@ body {
       box-shadow: 0 1.1rem 1.1rem rgba(0, 0, 0, 0.11); }
     .button__pink:active {
       transform: translateY(-2px); }
+    .button__pink--round {
+      border-radius: 50px; }
+
+.button__video {
+  border: none;
+  margin-left: 2.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #fcf5ee;
+  transform: translateY(5px);
+  transition: all 0.2s; }
+  .button__video--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #f1817e;
+    transform: translateY(1px); }
+  .button__video:focus, .button__video:hover {
+    background-color: #f9ede0; }
+  .button__video:focus > *,
+  .button__video:hover > * {
+    fill: #ec5450; }
 
 .nav {
   width: 49%;
@@ -80,7 +112,7 @@ body {
 .header__content {
   width: 50%;
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 15%; }
 
 .header__heading {
@@ -91,9 +123,15 @@ body {
   margin-bottom: 2rem;
   width: 90%; }
 
+.header__video-label {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #263a41; }
+
 .header {
-  height: 70vh;
-  position: relative; }
+  height: calc(70vh + 1em);
+  position: relative;
+  margin-bottom: 5rem; }
   .header__img {
     z-index: 1; }
     .header__img--left {
@@ -109,3 +147,11 @@ body {
       width: 40%; }
       .header__img--right img {
         max-width: 100%; }
+
+.about {
+  margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center; }

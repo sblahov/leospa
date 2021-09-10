@@ -4,6 +4,7 @@
   padding: 1.5rem 3.5rem;
   font-weight: 600;
   letter-spacing: 1px;
+  border-radius: 2px;
 
   &__pink {
     background-color: $color-pink-primary;
@@ -20,5 +21,36 @@
     &:active {
       transform: translateY(-2px);
     }
+
+    &--round {
+      border-radius: 50px;
+    }
+  }
+}
+
+.button__video {
+  border: none;
+  margin-left: 2.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #fcf5ee;
+  transform: translateY(5px);
+  transition: all 0.2s;
+
+  &--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-pink-primary;
+    transform: translateY(1px);
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #f9ede0;
+  }
+
+  &:focus > *,
+  &:hover > * {
+    fill: $color-pink-dark;
   }
 }

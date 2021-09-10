@@ -6,11 +6,18 @@ body {
   color: $color-gray-dark;
 }
 
-.heading--1 {
+.heading__1 {
   font-family: "Rufina", serif;
   font-weight: 700;
   font-size: 4.5rem;
   line-height: 1.3;
+}
+
+.heading__2 {
+  font-family: "Rufina", serif;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: $color-gray-dark;
 }
 
 .header--span {
@@ -25,4 +32,9 @@ body {
 .paragraph__text {
   font-size: 1.4rem;
   color: $color-gray-light;
+}
+
+.section__description {
+  width: 70%;
+  margin-bottom: 3rem;
 }
