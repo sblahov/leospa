@@ -17,73 +17,136 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>LeoSpa</title>
   </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="#" class="nav__link"
+            ><img src="img/logo.png" alt="" class="nav__logo-img"
+          /></a>
+        </div>
 
-  <header class="header">
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="#" class="nav__link"
-          ><img src="img/logo.png" alt="" class="nav__logo-img"
-        /></a>
+        <ul class="nav__navigation">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Feature</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Service</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="header__img--left">
+        <img src="img/header-bg.png" alt="" />
+      </figure>
+
+      <figure class="header__img--right">
+        <img src="img/hero.png" alt="" />
+      </figure>
+
+      <div class="header__content">
+        <span class="header--span">Spa &amp; Beauty Center</span>
+        <h1 class="header__heading heading__1">
+          Beauty and success start here.
+        </h1>
+        <p class="header__description paragraph__text">
+          Leospa's mission is to rejuvenate and relax you so that you can live
+          your best life.
+        </p>
+        <div class="header__buttons">
+          <button class="button button__pink">Reserve Now</button>
+          <button class="button__video">
+            <svg class="button__video--icon">
+              <use xlink:href="img/symbol-defs.svg#icon-triangle-right"></use>
+            </svg>
+          </button>
+          <label class="header__video-label" for="button__video"
+            >Watch our story</label
+          >
+        </div>
       </div>
+    </header>
 
-      <ul class="nav__navigation">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Feature</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Service</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <figure class="header__img--left">
-      <img src="img/header-bg.png" alt="" />
-    </figure>
-
-    <figure class="header__img--right">
-      <img src="img/hero.png" alt="" />
-    </figure>
-
-    <div class="header__content">
-      <span class="header--span">Spa &amp; Beauty Center</span>
-      <h1 class="header__heading heading__1">Beauty and success start here.</h1>
-      <p class="header__description paragraph__text">
-        Leospa's mission is to rejuvenate and relax you so that you can live
-        your best life.
-      </p>
-      <div class="header__buttons">
-        <button class="button button__pink">Reserve Now</button>
-        <button class="button__video">
-          <svg class="button__video--icon">
-            <use xlink:href="img/symbol-defs.svg#icon-triangle-right"></use>
-          </svg>
+    <main>
+      <section class="about">
+        <h2 class="heading__2">About Our Spa Center</h2>
+        <p class="section__description paragraph__text">
+          We are a team of passionate wellness professionals who provide
+          services to relax and restore you. Each of our clients receives a
+          custom spa experience tailored to address each of their specific
+          physical and mental needs.
+        </p>
+        <button class="button button__pink button__pink--round">
+          Read More
         </button>
-        <label class="header__video-label" for="button__video"
-          >Watch our story</label
-        >
-      </div>
-    </div>
-  </header>
+      </section>
 
-  <main>
-    <section class="about">
-      <h2 class="heading__2">About Our Spa Center</h2>
-      <p class="section__description paragraph__text">
-        We are a team of passionate wellness professionals who provide services
-        to relax and restore you. Each of our clients receives a custom spa
-        experience tailored to address each of their specific physical and
-        mental needs.
-      </p>
-      <button class="button button__pink button__pink--round">Read More</button>
-    </section>
-  </main>
+      <section class="service">
+        <figure class="service-card">
+          <img
+            src="img/service-1.jpg"
+            alt="A young woman lays on a massage table, receiving a massage"
+            class="service-card__img"
+          />
+          <div class="service-card__caption">
+            <svg class="service-card__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-leaf"></use>
+            </svg>
+            <p class="service-card__text">Body Treatment</p>
+          </div>
+        </figure>
+
+        <figure class="service-card">
+          <img
+            src="img/service-2.jpg"
+            alt="A spa worker places hot stones on a woman's back"
+            class="service-card__img"
+          />
+          <div class="service-card__caption">
+            <svg class="service-card__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-leaf"></use>
+            </svg>
+            <p class="service-card__text">Body Treatment</p>
+          </div>
+        </figure>
+
+        <figure class="service-card">
+          <img
+            src="img/service-3.jpg"
+            alt="A spa worker applies wax to a woman's leg"
+            class="service-card__img"
+          />
+          <div class="service-card__caption">
+            <svg class="service-card__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-leaf"></use>
+            </svg>
+            <p class="service-card__text">Body Treatment</p>
+          </div>
+        </figure>
+
+        <figure class="service-card">
+          <img
+            src="img/service-4.jpg"
+            alt="A spa workers massages a woman's head"
+            class="service-card__img"
+          />
+          <div class="service-card__caption">
+            <svg class="service-card__icon">
+              <use xlink:href="img/symbol-defs.svg#icon-leaf"></use>
+            </svg>
+            <p class="service-card__text">Body Treatment</p>
+          </div>
+        </figure>
+      </section>
+    </main>
+  </body>
 </html>
