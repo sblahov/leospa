@@ -5,11 +5,11 @@
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 2px;
+  color: #fff;
 
   &__pink {
     background-color: $color-pink-primary;
     transition: all 0.2s;
-    color: #fff;
 
     &:focus,
     &:hover {
@@ -25,6 +25,12 @@
     &--round {
       border-radius: 50px;
     }
+  }
+
+  &__black {
+    background-color: $color-gray-dark;
+    border-radius: 50px;
+    transition: all 0.2s;
   }
 }
 
