@@ -1,18 +1,10 @@
 .nav {
-  width: 49%;
-  margin-left: 14rem;
+  width: 70%;
   padding: 2rem;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
   z-index: 100;
   position: relative;
-
-  &__logo {
-    img {
-      max-width: 80%;
-    }
-  }
 
   &__navigation {
     width: 60%;
@@ -23,16 +15,33 @@
 
   &__item {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin-right: 1.5rem;
-    color: #000;
+    color: $color-gray-dark;
     font-weight: 500;
+
+    &:not(:first-of-type) {
+      margin-top: 3rem;
+    }
   }
 
   &__link {
     text-decoration: none;
-    color: $color-gray-dark;
+    transition: all 0.2s;
+    padding-bottom: 1rem;
+
+    &:link,
+    &:visited {
+      color: $color-gray-dark;
+      border-bottom: 2px solid transparent;
+    }
+
+    &:hover:not(#nav__logo),
+    &:active:not(#nav__logo) {
+      color: $color-pink-primary;
+      border-bottom: 2px solid $color-pink-primary;
+    }
   }
 }
 
